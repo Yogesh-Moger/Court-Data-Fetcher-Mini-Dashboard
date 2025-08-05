@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delhi High Court Case Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Search Delhi High Court Case</h2>
+    <form method="post">
+        <label>Case Type:</label>
+        <select name="case_type" required>
+        <option value="W.P.(C)">W.P.(C)</option>
+        <option value="CRL.A.">CRL.A.</option><option value="BAIL">BAIL</option>
+        <option value="CRL.M.C.">CRL.M.C.</option>
+        <option value="CRL.REV.P.">CRL.REV.P.</option>
+        <!-- Add more based on the Delhi HC dropdown -->
+        </select>
+        <label>Case Number:</label>
+        <input type="text" name="case_no" required>
+        <label>Filing Year:</label>
+        <input type="text" name="filing_year" required>
+        <button type="submit">Fetch</button>
+    </form>
+</body>
+</html>

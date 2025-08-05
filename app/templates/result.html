@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Case Details</title></head>
+<body>
+    <h2>Case Details</h2>
+    <p><strong>Parties:</strong> {{ result.parties }}</p>
+    <p><strong>Filing Date:</strong> {{ result.filing_date }}</p>
+    <p><strong>Next Hearing:</strong> {{ result.hearing_date }}</p>
+    {% if result.pdf_link != "-" %}
+    <a href="{{ result.pdf_link }}" target="_blank">Download PDF</a>
+    {% else %}
+    <p>No PDF available.</p>
+    {% endif %}
+    <br><a href="/">Back</a>
+</body>
+</html>
